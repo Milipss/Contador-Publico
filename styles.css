@@ -1,8 +1,8 @@
 body {
   font-family: 'Segoe UI', sans-serif;
+  background-color: #fdf6f9;
   margin: 0;
   padding: 0;
-  background-color: #fdf6f9;
   color: #333;
 }
 
@@ -46,21 +46,24 @@ h1 {
   padding: 10px;
   border-radius: 12px;
   text-align: center;
-  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
   font-weight: 500;
   box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
 }
 
-/* Colores pasteles distintos para cada materia */
-.materia:nth-child(odd) {
-  background-color: #f6b5cf; /* rosa pastel */
-}
-.materia:nth-child(even) {
-  background-color: #b5e3f6; /* celeste pastel */
+/* Pastel colors per year */
+#anio1 .materia { background-color: #ffe6a7; }
+#anio2 .materia { background-color: #b9fbc0; }
+#anio3 .materia { background-color: #cdb4db; }
+#anio4 .materia { background-color: #f6b5cf; }
+#anio5 .materia { background-color: #b5e3f6; }
+
+/* Tachar al aprobar */
+.materia.aprobada {
+  text-decoration: line-through;
+  opacity: 0.6;
+  background-color: #d9d9d9 !important;
+  color: #444;
 }
 
-/* Colores por año (si querés más variedad) */
-#anio1 .materia {
-  background-color: #ffe6a
-
-  
